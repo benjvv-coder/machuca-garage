@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Machuca Garage: mecánica automotriz, diagnóstico y mantenciones en Rancagua.">
+  <title>Machuca Garage | Servicio Automotriz</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="navbar">
+    <a href="#inicio" class="logo">
+      MACHUCA <span>GARAGE</span>
+    </a>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Sobre nosotros</a>
+      <a href="#ubicacion">Ubicación y horarios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="nav-button"
+       href="https://wa.me/56979511233"
+       target="_blank"
+       rel="noopener noreferrer">
+      Consultar
+    </a>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">MACHUCA GARAGE · SERVICIO AUTOMOTRIZ</p>
+
+        <h1>
+          Tu vehículo merece
+          <span>el mejor cuidado.</span>
+        </h1>
+
+        <p class="hero-description">
+          Soluciones automotrices pensadas para cuidar tu vehículo.
+          Contáctanos y conversemos sobre lo que necesita tu automóvil.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            class="button-primary"
+            href="https://wa.me/56979511233"
+            target="_blank"
+            rel="noopener noreferrer">
+            Cotizar por WhatsApp ↗
+          </a>
+
+          <a class="button-secondary" href="#servicios">
+            Explorar servicios ↓
+          </a>
+        </div>
+
+        <p class="hero-location">
+          <span class="status-dot"></span>
+          Atención automotriz · Rancagua
+        </p>
+      </div>
+
+      <div class="hero-bottom">
+        <span>MANTENCIÓN · DIAGNÓSTICO · MECÁNICA</span>
+        <span>PASIÓN POR LOS AUTOS</span>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+      <p class="eyebrow">CÓMO PODEMOS AYUDARTE</p>
+
+      <h2>Soluciones para tu vehículo.</h2>
+
+      <p class="section-description">
+        Consulta por el servicio que necesita tu automóvil.
+      </p>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <span>01 / MECÁNICA</span>
+          <h3>Mecánica general</h3>
+          <p>
+            Revisión y reparación según las necesidades de tu vehículo.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span>02 / DIAGNÓSTICO</span>
+          <h3>Diagnóstico con scanner</h3>
+          <p>
+            Evaluación de fallas para orientar una reparación adecuada.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span>03 / MANTENCIÓN</span>
+          <h3>Mantenciones preventivas</h3>
+          <p>
+            Cuidados para ayudar a mantener tu automóvil en buen estado.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span>04 / ESPECIALIDADES</span>
+          <h3>Electricidad y climatización</h3>
+          <p>
+            Consulta por servicios eléctricos y sistemas de aire acondicionado.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+        <!-- SOLICITUD DE COTIZACIÓN -->
+    <section class="quote-section" id="cotizacion">
+
+      <div class="quote-heading">
+        <p class="eyebrow">COTIZACIÓN PERSONALIZADA</p>
+
+        <h2>Solicita tu <span>cotización.</span></h2>
+
+        <p class="quote-description">
+          Cuéntanos qué vehículo tienes y qué servicio necesitas.
+          Envíanos tu consulta y te orientaremos por WhatsApp.
+        </p>
+      </div>
+
+      <form class="quote-form" id="cotizacionForm">
+
+        <div class="quote-form-heading">
+          <span class="quote-step">01</span>
+          <div>
+            <h3>Datos de tu vehículo</h3>
+            <p>Necesitamos algunos datos para orientarte mejor.</p>
+          </div>
+        </div>
+
+        <div class="quote-fields">
+
+          <div class="quote-field">
+            <label for="marcaVehiculo">Marca del vehículo *</label>
+            <input
+              type="text"
+              id="marcaVehiculo"
+              name="marca"
+              placeholder="Ej. BMW, Audi, Volkswagen"
+              required>
+          </div>
+
+          <div class="quote-field">
+            <label for="modeloVehiculo">Modelo *</label>
+            <input
+              type="text"
+              id="modeloVehiculo"
+              name="modelo"
+              placeholder="Ej. Serie 3, Golf, A4"
+              required>
+          </div>
+
+          <div class="quote-field quote-field-full">
+            <label for="anioVehiculo">Año del vehículo *</label>
+            <input
+              type="number"
+              id="anioVehiculo"
+              name="anio"
+              placeholder="Ej. 2018"
+              min="1950"
+              max="2026"
+              required>
+          </div>
+
+        </div>
+
+        <div class="quote-form-heading quote-second-heading">
+          <span class="quote-step">02</span>
+          <div>
+            <h3>Servicio que necesitas</h3>
+            <p>Selecciona la opción que mejor describa tu consulta.</p>
+          </div>
+        </div>
+
+        <div class="quote-field">
+          <label for="servicioVehiculo">Servicio *</label>
+          <select id="servicioVehiculo" name="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option value="Mecánica general">Mecánica general</option>
+            <option value="Diagnóstico con scanner">Diagnóstico con scanner</option>
+            <option value="Mantenciones preventivas">Mantenciones preventivas</option>
+            <option value="Electricidad y climatización">Electricidad y climatización</option>
+            <option value="No estoy seguro del servicio">No estoy seguro del servicio</option>
+          </select>
+        </div>
+
+        <div class="quote-field quote-description-field">
+          <label for="consultaVehiculo">Cuéntanos qué necesitas</label>
+          <textarea
+            id="consultaVehiculo"
+            name="consulta"
+            rows="4"
+            placeholder="Describe el problema de tu vehículo o el trabajo que deseas realizar (opcional)."></textarea>
+        </div>
+
+        <div class="quote-notice">
+          <span class="quote-notice-icon">i</span>
+          <p>
+            El valor del servicio dependerá del vehículo y del trabajo requerido.
+            Puedes solicitar una cotización directamente al taller.
+          </p>
+        </div>
+
+        <button type="submit" class="button-primary quote-submit">
+          Solicitar cotización por WhatsApp ↗
+        </button>
+
+        <p class="quote-privacy-note">
+          Tus datos se utilizarán para preparar el mensaje que enviarás al taller.
+        </p>
+
+      </form>
+
+    </section>
+    <!-- FIN DE SOLICITUD DE COTIZACIÓN -->
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="about" id="nosotros">
+
+      <div class="about-image">
+        <img
+          src="img/logo-machuca.jpeg"
+          alt="Logo oficial de Machuca Garage"
+          loading="lazy">
+
+        <span class="about-image-caption">
+          MACHUCA GARAGE · RANCAGUA
+        </span>
+      </div>
+
+      <div class="about-content">
+
+        <p class="eyebrow">CONOCE NUESTRO TALLER</p>
+
+        <h2>
+          Pasión por los autos.
+          <span>Compromiso en cada detalle.</span>
+        </h2>
+
+        <p>
+          Detrás de cada vehículo hay personas que comparten la pasión
+          por el mundo automotriz. En Machuca Garage buscamos ofrecer
+          una atención cercana y soluciones adaptadas a las necesidades
+          de cada automóvil.
+        </p>
+
+        <p>
+          Queremos que tengas la información necesaria para cuidar tu
+          vehículo y tomar decisiones con confianza.
+        </p>
+
+        <!-- RESPONSABLE DEL TALLER -->
+        <div class="about-manager">
+          <p class="manager-label">A CARGO DEL TALLER</p>
+          <h3>Michael Machuca</h3>
+          <p>Responsable de Machuca Garage</p>
+        </div>
+
+        <a class="button-primary"
+           href="https://wa.me/56979511233"
+           target="_blank"
+           rel="noopener noreferrer">
+          Hablemos por WhatsApp ↗
+        </a>
+
+      </div>
+    </section>
+
+    <!-- UBICACIÓN Y HORARIOS -->
+    <section class="location-section" id="ubicacion">
+
+      <div class="location-heading">
+        <p class="eyebrow">VISÍTANOS</p>
+        <h2>Encuéntranos en <span>Machuca Garage.</span></h2>
+
+        <p class="location-description">
+          Revisa nuestros horarios y encuentra la ubicación del taller.
+          Si necesitas confirmar la atención, contáctanos por WhatsApp.
+        </p>
+      </div>
+
+      <div class="location-grid">
+
+        <!-- UBICACIÓN -->
+        <article class="location-card">
+          <div class="location-icon">⌖</div>
+          <p class="location-label">NUESTRA UBICACIÓN</p>
+          <h3>¿Cómo llegar?</h3>
+
+          <p>
+            Consulta nuestra ubicación en Google Maps y planifica tu visita.
+          </p>
+
+          <a
+            class="button-primary"
+            href="https://maps.app.goo.gl/XuhtzguD6vybRQTP8"
+            target="_blank"
+            rel="noopener noreferrer">
+            Abrir en Google Maps ↗
+          </a>
+        </article>
+
+        <!-- HORARIOS -->
+        <article class="location-card hours-card">
+          <div class="location-icon">◷</div>
+          <p class="location-label">HORARIOS DE ATENCIÓN</p>
+          <h3>¿Cuándo visitarnos?</h3>
+
+          <div class="hours-list">
+
+            <div class="hours-row">
+              <span>Lunes</span>
+              <span>9:00–19:00</span>
+            </div>
+
+            <div class="hours-row">
+              <span>Martes</span>
+              <span>9:00–19:00</span>
+            </div>
+
+            <div class="hours-row">
+              <span>Miércoles</span>
+              <span>9:00–19:00</span>
+            </div>
+
+            <div class="hours-row">
+              <span>Jueves</span>
+              <span>9:00–19:00</span>
+            </div>
+
+            <div class="hours-row">
+              <span>Viernes</span>
+              <span>9:00–19:00</span>
+            </div>
+
+            <div class="hours-row closed">
+              <span>Sábado</span>
+              <span>Cerrado</span>
+            </div>
+
+            <div class="hours-row closed">
+              <span>Domingo</span>
+              <span>Cerrado</span>
+            </div>
+
+          </div>
+
+          <p class="hours-note">
+            * Los horarios pueden variar. Confirma la atención antes de visitarnos.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+
+      <p class="eyebrow">HABLEMOS DE TU VEHÍCULO</p>
+
+      <h2>¿Necesitas una revisión?</h2>
+
+      <p>
+        Cuéntanos qué necesita tu automóvil y consulta directamente con nuestro taller.
+      </p>
+
+      <div class="contact-details">
+
+        <div class="contact-detail">
+          <span class="contact-detail-label">RESPONSABLE DEL TALLER</span>
+          <h3>Michael Machuca</h3>
+          <p>Encargado de Machuca Garage</p>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-detail-label">CORREO ELECTRÓNICO</span>
+          <a href="mailto:serviciomachucagarage@gmail.com">
+            serviciomachucagarage@gmail.com
+          </a>
+        </div>
+
+      </div>
+
+      <a class="button-primary"
+         href="https://wa.me/56979511233"
+         target="_blank"
+         rel="noopener noreferrer">
+        Contactar al taller por WhatsApp ↗
+      </a>
+
+    </section>
+
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <a href="#inicio" class="logo">
+      MACHUCA <span>GARAGE</span>
+    </a>
