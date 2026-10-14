@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#101010">
   <meta name="description" content="Machuca Garage: mecánica automotriz, diagnóstico y mantenciones en Rancagua.">
+
   <title>Machuca Garage | Servicio Automotriz</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +24,17 @@
       MACHUCA <span>GARAGE</span>
     </a>
 
-    <nav>
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="menu-principal">
+      ☰
+    </button>
+
+    <nav id="menu-principal">
       <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
       <a href="#nosotros">Sobre nosotros</a>
@@ -30,10 +42,11 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <a class="nav-button"
-       href="https://wa.me/56979511233"
-       target="_blank"
-       rel="noopener noreferrer">
+    <a
+      class="nav-button"
+      href="https://wa.me/56979511233"
+      target="_blank"
+      rel="noopener noreferrer">
       Consultar
     </a>
   </header>
@@ -128,7 +141,7 @@
       </div>
     </section>
 
-        <!-- SOLICITUD DE COTIZACIÓN -->
+    <!-- SOLICITUD DE COTIZACIÓN -->
     <section class="quote-section" id="cotizacion">
 
       <div class="quote-heading">
@@ -198,6 +211,7 @@
 
         <div class="quote-field">
           <label for="servicioVehiculo">Servicio *</label>
+
           <select id="servicioVehiculo" name="servicio" required>
             <option value="">Selecciona un servicio</option>
             <option value="Mecánica general">Mecánica general</option>
@@ -210,6 +224,7 @@
 
         <div class="quote-field quote-description-field">
           <label for="consultaVehiculo">Cuéntanos qué necesitas</label>
+
           <textarea
             id="consultaVehiculo"
             name="consulta"
@@ -234,16 +249,14 @@
         </p>
 
       </form>
-
     </section>
-    <!-- FIN DE SOLICITUD DE COTIZACIÓN -->
 
     <!-- SOBRE NOSOTROS -->
     <section class="about" id="nosotros">
 
       <div class="about-image">
         <img
-          src="img/logo-machuca.jpeg"
+          src="./img/logo-machuca.jpeg"
           alt="Logo oficial de Machuca Garage"
           loading="lazy">
 
@@ -253,7 +266,6 @@
       </div>
 
       <div class="about-content">
-
         <p class="eyebrow">CONOCE NUESTRO TALLER</p>
 
         <h2>
@@ -273,20 +285,19 @@
           vehículo y tomar decisiones con confianza.
         </p>
 
-        <!-- RESPONSABLE DEL TALLER -->
         <div class="about-manager">
           <p class="manager-label">A CARGO DEL TALLER</p>
           <h3>Michael Machuca</h3>
           <p>Responsable de Machuca Garage</p>
         </div>
 
-        <a class="button-primary"
-           href="https://wa.me/56979511233"
-           target="_blank"
-           rel="noopener noreferrer">
+        <a
+          class="button-primary"
+          href="https://wa.me/56979511233"
+          target="_blank"
+          rel="noopener noreferrer">
           Hablemos por WhatsApp ↗
         </a>
-
       </div>
     </section>
 
@@ -295,6 +306,7 @@
 
       <div class="location-heading">
         <p class="eyebrow">VISÍTANOS</p>
+
         <h2>Encuéntranos en <span>Machuca Garage.</span></h2>
 
         <p class="location-description">
@@ -305,7 +317,6 @@
 
       <div class="location-grid">
 
-        <!-- UBICACIÓN -->
         <article class="location-card">
           <div class="location-icon">⌖</div>
           <p class="location-label">NUESTRA UBICACIÓN</p>
@@ -324,7 +335,6 @@
           </a>
         </article>
 
-        <!-- HORARIOS -->
         <article class="location-card hours-card">
           <div class="location-icon">◷</div>
           <p class="location-label">HORARIOS DE ATENCIÓN</p>
@@ -377,7 +387,6 @@
       </div>
     </section>
 
-    
     <!-- CONTACTO -->
     <section class="contact" id="contacto">
 
@@ -406,15 +415,15 @@
 
       </div>
 
-      <a class="button-primary"
-         href="https://wa.me/56979511233"
-         target="_blank"
-         rel="noopener noreferrer">
+      <a
+        class="button-primary"
+        href="https://wa.me/56979511233"
+        target="_blank"
+        rel="noopener noreferrer">
         Contactar al taller por WhatsApp ↗
       </a>
 
     </section>
-
 
   </main>
 
@@ -423,3 +432,12 @@
     <a href="#inicio" class="logo">
       MACHUCA <span>GARAGE</span>
     </a>
+
+    <p>© 2026 Machuca Garage. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- CARGA DEL JAVASCRIPT -->
+  <script src="./script.js" defer></script>
+
+</body>
+</html>
